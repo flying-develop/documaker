@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-03-30T17:49:43.000215+00:00",
+  "repo": ".",
+  "provider": "qwen",
+  "files_analyzed": 488,
+  "components_found": 179,
+  "docs_generated": [
+    "README.md",
+    "architecture.md",
+    "components.md",
+    "api-integration.md"
+  ]
+}
