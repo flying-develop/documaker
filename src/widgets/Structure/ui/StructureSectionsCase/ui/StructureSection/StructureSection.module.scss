@@ -1,0 +1,23 @@
+.menu {
+  color: var(--color-blue-bayoux);
+  transition: .25s ease-in-out;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.dropdown {
+  padding: 2px 0 2px 5px;
+}
+
+.wrapper {
+  border: none!important;
+}
+.chip {
+  border-radius: 12px;
+  border: none!important;
+  padding: 0!important;
+}

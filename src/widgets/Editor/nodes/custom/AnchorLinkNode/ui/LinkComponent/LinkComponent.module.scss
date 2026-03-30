@@ -1,0 +1,21 @@
+.anchor {
+  gap: 5px;
+  color: var(--color-blue);
+  background: var(--color-light-blue);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.pin {
+  position: relative;
+  top: 2px;
+  right: 2px;
+}
+
+
+.container {
+  position: relative;
+  margin: 0 3px;
+}

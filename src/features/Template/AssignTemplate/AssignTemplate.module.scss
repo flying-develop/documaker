@@ -1,0 +1,14 @@
+@import '&/app/styles/_mixins.scss';
+.users {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  @include scroll-bar(5px)
+}
+
+.search {
+  margin: 0 0 15px;
+}

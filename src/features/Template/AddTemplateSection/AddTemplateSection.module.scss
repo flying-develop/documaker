@@ -1,0 +1,14 @@
+.button {
+  align-self: flex-end;
+}
+
+.segment {
+width: fit-content;
+  align-self: center;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

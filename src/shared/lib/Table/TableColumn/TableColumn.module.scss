@@ -1,0 +1,158 @@
+.table-col {
+    display: flex;
+    flex: 1;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18.75px;
+
+    &::before {
+        @media all and (max-width: 1000px) {
+            flex-basis: 100%;
+            color: #6C7A89;
+            padding-right: 10px;
+            content: attr(data-label);
+        }
+    }
+}
+
+.table-cell-user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+
+
+    &-avatar-text {
+        flex: 0 0 24px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &-avatar-image {
+        flex: 0 0 24px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &-avatar-name {
+        font-family: 'Geologica', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 18.75px;
+        max-width: 225px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+.table-action-button {
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    padding: 5px;
+    margin: -5px;
+}
+
+.table-action-dropdown-menu {
+    box-shadow: 0px 4px 24px 0px #24242414 !important;
+    border-radius: 16px !important;
+    background-color: #FFFFFF !important;
+}
+
+.table-action-dropdown-item {
+    font-family: 'Geologica', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+    line-height: 16px !important;
+    text-align: left !important;
+    color: #475E70 !important;
+    border-radius: 12px !important;
+
+    padding: 12px 16px !important;
+
+    &:hover {
+        background-color: #F5F7F9 !important;
+    }
+}
+
+.table-action-dropdown-item-danger {
+    color: #FF5050 !important;
+
+    &:hover {
+        background-color: #FFE4E4 !important;
+    }
+}
+
+
+.table-roles {
+    font-family: 'Geologica', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18.75px;
+    color: #475E70;
+    height: auto;
+
+    :global {
+        .ant-select-selector {
+            background-color: transparent !important;
+            border: unset !important;
+            padding-left: 0 !important;
+
+            &::after {
+                line-height: 18.75px !important;
+            }
+        }
+
+        .ant-select-selection-item {
+            line-height: 18.75px !important;
+        }
+
+        .ant-select-selection-search {
+            display: none !important;
+        }
+    }
+}
+
+.table-roles-popup {
+    min-width: 160px;
+    box-shadow: 0px 4px 24px 0px #24242414;
+    border: 2px solid #F5F7F9;
+    border-radius: 16px;
+    background-color: #ffffff;
+    padding: 8px;
+
+    :global {
+        .ant-select-item-option-active {
+            background-color: rgba(#E6EDF3, 0.4) !important;
+        }
+
+        .ant-select-item-option-selected {
+            background-color: #E6EDF3 !important;
+        }
+    }
+}
+
+.table-roles-item {
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.set-manager-default {
+    font-family: 'Geologica', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18.75px;
+    color: #FF6C50;
+    cursor: pointer;
+}
+
+.set-manager {
+    font-family: 'Geologica', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18.75px;
+    color: #475E70;
+    cursor: pointer;
+}

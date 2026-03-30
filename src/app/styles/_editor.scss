@@ -1,0 +1,330 @@
+.table-cell-action-button-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform;
+}
+
+.table-cell-action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px !important;
+}
+
+.dialog-dropdown {
+    background-color: #eee !important;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.dropdown {
+    z-index: 100;
+    display: block;
+    position: fixed;
+    box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    min-height: 40px;
+    background-color: #fff;
+}
+
+.dropdown .item {
+    margin: 0 8px 0 8px;
+    padding: 8px;
+    color: #050505;
+    cursor: pointer;
+    line-height: 16px;
+    font-size: 15px;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 0;
+    max-width: 250px;
+    min-width: 100px;
+}
+
+.dropdown .item.fontsize-item,
+.dropdown .item.fontsize-item .text {
+    min-width: unset;
+}
+
+.dropdown .item .active {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+
+.dropdown .item:first-child {
+    margin-top: 8px;
+}
+
+.dropdown .item:last-child {
+    margin-bottom: 8px;
+}
+
+.dropdown .item:hover {
+    background-color: #eee;
+}
+
+.dropdown .item .text {
+    display: flex;
+    line-height: 20px;
+    flex-grow: 1;
+    min-width: 150px;
+}
+
+.dropdown .item .icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    user-select: none;
+    margin-right: 12px;
+    line-height: 16px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dropdown .divider {
+    width: auto;
+    background-color: #eee;
+    margin: 4px 8px;
+    height: 1px;
+}
+
+@media screen and (max-width: 1100px) {
+    .dropdown-button-text {
+        display: none !important;
+    }
+
+    .dialog-dropdown>.dropdown-button-text {
+        display: flex !important;
+    }
+
+    .font-size .dropdown-button-text {
+        display: flex !important;
+    }
+
+    .code-language .dropdown-button-text {
+        display: flex !important;
+    }
+}
+
+.TableCellResizer__resizer {
+    position: absolute;
+}
+
+
+// IMAGE
+span.editor-image {
+    cursor: default;
+    display: inline-block;
+    position: relative;
+    user-select: none;
+}
+
+.editor-image img {
+    max-width: 100%;
+    cursor: default;
+}
+
+.editor-image img.focused {
+    outline: 2px solid rgb(60, 132, 244);
+    user-select: none;
+}
+
+.editor-image img.focused.draggable {
+    cursor: grab;
+}
+
+.editor-image img.focused.draggable:active {
+    cursor: grabbing;
+}
+
+.editor-image .image-caption-container .tree-view-output {
+    margin: 0;
+    border-radius: 0;
+}
+
+.editor-image .image-caption-container {
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 100px;
+    color: #000;
+    overflow: hidden;
+}
+
+.editor-image .image-caption-button {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    width: 30%;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 100px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.editor-image .image-caption-button:hover {
+    background-color: rgba(60, 132, 244, 0.5);
+}
+
+.editor-image .image-edit-button {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    user-select: none;
+}
+
+.inline-editor-image .image-resizer {
+    display: block;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    background-color: rgb(60, 132, 244);
+    border: 1px solid #fff;
+}
+
+.inline-editor-image .image-resizer.image-resizer-n {
+    top: -6px;
+    left: 48%;
+    cursor: n-resize;
+}
+
+.inline-editor-image .image-resizer.image-resizer-ne {
+    top: -6px;
+    right: -6px;
+    cursor: ne-resize;
+}
+
+.inline-editor-image .image-resizer.image-resizer-e {
+    bottom: 48%;
+    right: -6px;
+    cursor: e-resize;
+}
+
+.inline-editor-image .image-resizer.image-resizer-se {
+    bottom: -2px;
+    right: -6px;
+    cursor: nwse-resize;
+}
+
+.inline-editor-image .image-resizer.image-resizer-s {
+    bottom: -2px;
+    left: 48%;
+    cursor: s-resize;
+}
+
+.inline-editor-image .image-resizer.image-resizer-sw {
+    bottom: -2px;
+    left: -6px;
+    cursor: sw-resize;
+}
+
+.inline-editor-image .image-resizer.image-resizer-w {
+    bottom: 48%;
+    left: -6px;
+    cursor: w-resize;
+}
+
+.inline-editor-image .image-resizer.image-resizer-nw {
+    top: -6px;
+    left: -6px;
+    cursor: nw-resize;
+}
+
+span.inline-editor-image {
+    cursor: default;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.inline-editor-image img {
+    max-width: 100%;
+    cursor: default;
+}
+
+.inline-editor-image img.focused {
+    outline: 2px solid rgb(60, 132, 244);
+}
+
+.inline-editor-image img.focused.draggable {
+    cursor: grab;
+}
+
+.inline-editor-image img.focused.draggable:active {
+    cursor: grabbing;
+}
+
+.inline-editor-image .image-caption-container .tree-view-output {
+    margin: 0;
+    border-radius: 0;
+}
+
+.inline-editor-image.position-full {
+    margin: 1em 0 1em 0;
+}
+
+.inline-editor-image.position-left {
+    float: left;
+    width: 50%;
+    margin: 1em 1em 0 0;
+}
+
+.inline-editor-image.position-right {
+    float: right;
+    width: 50%;
+    margin: 1em 0 0 1em;
+}
+
+.inline-editor-image.position-center {
+    float: unset;
+    display: block;
+    width: 50%;
+    margin: 1em auto 1em auto;
+}
+
+.inline-editor-image .image-edit-button {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 6px 8px;
+    margin: 0 auto;
+    min-width: 60px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.inline-editor-image .image-caption-container {
+    display: block;
+    background-color: #f4f4f4;
+    min-width: 100%;
+    color: #000;
+    overflow: hidden;
+}

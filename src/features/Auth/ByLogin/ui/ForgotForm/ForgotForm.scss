@@ -1,0 +1,123 @@
+@import "&/app/styles/mixins";
+
+.forgot-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.forgot-segmented {
+    padding: 4px;
+    background-color: var(--color-athens-gray);
+    margin-bottom: 16px;
+
+    .ant-segmented-item {
+        flex: 1 1 100%;
+    }
+
+    .ant-segmented-item-selected {
+        background: var(--color-catskill-white);
+        box-shadow: unset;
+    }
+
+    &.ant-segmented.ant-segmented-lg {
+        border-radius: 16px;
+
+        .ant-segmented-item {
+            border-radius: 12px;
+        }
+
+        .ant-segmented-item-label {
+            min-height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            color: var(--color-black)
+        }
+    }
+}
+
+.forgot-input {
+    input.ant-input,
+    input {
+        border-radius: 12px;
+        border: 2px solid var(--color-catskill-white);
+        padding: 12.5px 14px;
+        width: 100%;
+        color: var(--color-black);
+        transition: 0.3s border-color;
+
+        @include placeholder {
+            font-family: "Geologica", sans-serif;
+            color: var(--color-blue-bayoux);
+            font-weight: 300;
+            line-height: normal;
+            font-size: 15px;
+        }
+
+        &:focus {
+            border-color: var(--color-peach-schnapps);
+        }
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 30px white inset !important;
+        }
+    }
+
+    & + .forgot-input-password,
+    & + .forgot-input {
+        margin-top: 16px;
+    }
+}
+
+.forgot-input-password {
+    &.ant-input-affix-wrapper {
+        background: transparent;
+        border: 2px solid var(--color-catskill-white);
+        border-radius: 12px;
+        padding: 11.5px 14px;
+
+        &.ant-input-affix-wrapper-focused {
+            box-shadow: unset;
+            border-color: var(--color-peach-schnapps);
+        }
+    }
+
+    input.ant-input {
+        width: 100%;
+        color: var(--color-black);
+        transition: 0.3s border-color;
+
+        @include placeholder {
+            font-family: "Geologica", sans-serif;
+            color: var(--color-blue-bayoux);
+            font-size: 15px;
+        }
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 30px white inset !important;
+        }
+    }
+
+    & + .forgot-input-password,
+    & + .forgot-input {
+        margin-top: 16px;
+    }
+}
+
+.forgot-back,
+.forgot-input-submit {
+    margin-top: 16px;
+}
+
+.forgot-input-error {
+    font-weight: 300;
+    line-height: normal;
+    font-size: 13px;
+    color: var(--color-sunset-orange);
+    margin-top: 8px;
+}

@@ -1,0 +1,78 @@
+@import '&/app/styles/_mixins.scss';
+
+%aside {
+    max-height: calc(100vh - 128px);
+    height: 100%;
+    max-width: 400px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 24px 0 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.template {
+    display: flex;
+    align-items: flex-start;
+    height: calc(100vh - 128px);
+    gap: 8px;
+    overflow: hidden;
+    overflow-y: auto;
+    margin: 0 -32px;
+    padding-left: 32px;
+    padding-right: 24px;
+    @include scroll-bar(8px)
+}
+
+.aside-right {
+    @extend %aside;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aside-left {
+    @extend %aside;
+    background-color: white;
+
+    :global {
+        .ant-card-body {
+            height: 100%;
+            padding: 0;
+        }
+    }
+}
+
+.content {
+    min-width: 576px;
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.structure {
+    display: grid;
+    grid-template-columns: 50px auto;
+    height: 100%;
+}
+
+// .draft {
+//   grid-template-columns: 1.25fr 2fr 1fr;
+// }

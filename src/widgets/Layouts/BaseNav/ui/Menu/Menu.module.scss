@@ -1,0 +1,53 @@
+.menu {
+    position: relative;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.item-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    padding: 16px 20px;
+    border-radius: 16px;
+    background-color: transparent;
+
+    &:hover {
+        background-color: #F5F7F9;
+    }
+}
+
+.item-label {
+    color: #475E70;
+    font-family: 'Geologica', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+}
+
+.item-active {
+    background: #E6EDF3;
+
+    .item-label {
+        color: #323B42;
+    }
+
+    &:hover {
+        background: #E6EDF3;
+    }
+}

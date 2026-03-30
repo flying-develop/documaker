@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "&/*": ["src/*"],
+            "&/app/*": ["src/app/*"],
+            "&/entities/*": ["src/entities/*"],
+            "&/shared/*": ["src/shared/*"],
+            "&/widgets/*": ["src/widgets/*"],
+            "&/features/*": ["src/features/*"],
+        },
+        "target": "ESNext",
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "module": "ESNext",
+        "skipLibCheck": true,
+        /* Bundler mode */
+        "moduleResolution": "bundler",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        /* Linting */
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "preserveConstEnums": true
+    },
+    "include": ["src", "**/*.ts", "**/*.tsx"],
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ]
+}

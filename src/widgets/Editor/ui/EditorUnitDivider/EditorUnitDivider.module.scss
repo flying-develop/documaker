@@ -1,0 +1,28 @@
+.container {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.divider {
+  height: 1px;
+  border-bottom: 1px dashed var(--color-mystic);
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

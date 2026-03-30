@@ -1,0 +1,36 @@
+.segments {
+  border-radius: 6px;
+  background: var(--color-athens-gray);
+  >div {
+    margin-bottom: 0!important;
+  }
+}
+
+.container {
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 8px;
+  align-items: center;
+  height: 36px;
+}
+
+.isCase {
+  grid-template-columns: auto 36px;
+}
+
+.button {
+  width: 36px!important;
+  height: 36px;
+  background-color: var(--color-athens-gray);
+  border-radius: 6px;
+  transition: .25s ease;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: #000;
+  }
+}

@@ -1,0 +1,15 @@
+.content {
+    border-radius: 24px;
+    border: 1px solid #D5E0E7;
+    background: #FFF;
+    overflow: hidden;
+    padding: 24px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 16px;
+}
+
+.sidebar {}

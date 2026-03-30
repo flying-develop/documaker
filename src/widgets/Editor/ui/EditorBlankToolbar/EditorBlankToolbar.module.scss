@@ -1,0 +1,43 @@
+.toolbar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  gap: 10px;
+  justify-content: flex-end;
+  position: sticky;
+  z-index: 999;
+}
+
+.button {
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-athens-gray);
+  border-radius: 0;
+  transition: .25s ease;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    color: #000;
+  }
+}
+
+.active {
+  background-color: var(--color-mystic);
+  color: #000;
+}
+.first {
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.last {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.group {
+  display: flex;
+  align-items: center;
+}

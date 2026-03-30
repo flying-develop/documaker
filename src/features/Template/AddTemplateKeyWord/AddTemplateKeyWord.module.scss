@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.content {
+  min-height: 400px;
+}
+
+.name {
+  font-weight: bold;
+  color: var(--color-green);
+  background-color: var(--color-light-green);
+  border-radius: 12px;
+  padding: 5px 10px;
+  user-select: none;
+  height: 26px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 5px;
+}

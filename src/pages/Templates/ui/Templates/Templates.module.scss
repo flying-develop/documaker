@@ -1,0 +1,10 @@
+@import "&/app/styles/mixins";
+
+.header {
+    display: grid;
+    grid-template-columns: auto 168px;
+    gap: 8px;
+    margin: 0 0 24px;
+    max-width: 100%;
+}
+

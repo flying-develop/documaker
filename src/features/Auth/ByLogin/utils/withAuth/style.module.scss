@@ -1,0 +1,39 @@
+.auth {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-logo {
+    position: relative;
+    width: 351px;
+    height: 48px;
+    margin: 0 auto;
+}
+
+.auth-box {
+    margin-top: 48px;
+    padding: 40px 24px 24px 24px;
+    border-radius: 24px;
+    background-color: var(--color-white);
+    min-width: 352px;
+}
+
+.auth-title {
+    color: var(--color-black);
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.auth-content {
+    margin-top: 16px;
+}

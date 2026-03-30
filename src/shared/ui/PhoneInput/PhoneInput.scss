@@ -1,0 +1,170 @@
+@import "&/app/styles/mixins";
+
+.input-phone {
+    font-family: var(--ff-main);
+
+    .flag-dropdown {
+        background: transparent;
+        border: unset;
+        border-radius: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.open {
+            background: transparent;
+        }
+    }
+
+    .form-control {
+        background: transparent;
+        border-radius: 12px;
+        border: 2px solid var(--color-catskill-white);
+        padding: 13.25px 14px;
+        padding-left: 62px;
+        height: auto;
+        width: 100%;
+
+        font-family: var(--ff-main);
+        font-size: 15px;
+        line-height: normal;
+        color: var(--color-black);
+        letter-spacing: normal;
+        transition: 0.3s border-color;
+
+        @include placeholder {
+            color: var(--color-blue-bayoux);
+            font-size: 15px;
+            line-height: normal;
+        }
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 30px white inset !important;
+        }
+
+        &.open,
+        &:focus {
+            border-color: var(--color-peach-schnapps);
+        }
+    }
+
+    .selected-flag {
+        width: 40px;
+        height: 32px;
+        padding: 0;
+        background-color: var(--color-athens-gray);
+        border-radius: 8px;
+        margin-left: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .arrow {
+            display: none;
+        }
+
+        .flag {
+            margin: 0;
+            left: 0;
+            top: 0;
+            position: static;
+        }
+    }
+
+    .country-list {
+        width: 304px;
+        margin: 0;
+        left: 0;
+        top: 100%;
+        margin-top: 6px;
+        border-radius: 16px;
+        background: var(--color-white);
+        box-shadow: 0px 4px 24px 0px rgba(36, 36, 36, 0.08);
+        padding: 8px;
+        overflow: hidden;
+        overflow-y: auto;
+        padding-right: 8px;
+
+        &::-webkit-scrollbar {
+            background-color: var(--color-white);
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: var(--color-white);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--color-salmon);
+            border-radius: 8px;
+        }
+
+        &::-webkit-scrollbar-button {
+            display: none;
+        }
+
+        .search {
+            background-color: var(--color-white);
+            margin-bottom: 16px;
+            z-index: 1;
+            top: -8px;
+            margin-left: -8px;
+            padding-left: 8px;
+            padding-top: 8px;
+            transition: 0.3s top;
+            will-change: top;
+
+            .search-box {
+                border-radius: 12px;
+                border: 2px solid var(--color-catskill-white);
+                padding: 12.5px 14px;
+                width: 100%;
+                color: var(--color-black);
+                transition: 0.3s border-color;
+
+                @include placeholder {
+                    color: var(--color-blue-bayoux);
+                    font-weight: 300;
+                    line-height: normal;
+                    font-size: 15px;
+                }
+
+                ;
+
+                &:focus {
+                    border-color: var(--color-peach-schnapps);
+                }
+            }
+        }
+
+        .country {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px;
+            border-radius: 16px;
+        }
+
+        .flag {
+            margin: 0;
+        }
+
+        .country-name {
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 16px;
+            color: var(--color-black);
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        .dial-code {
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 16px;
+            color: var(--color-blue-bayoux);
+        }
+    }
+}

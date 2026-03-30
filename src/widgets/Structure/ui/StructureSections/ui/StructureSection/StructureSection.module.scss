@@ -1,0 +1,11 @@
+.menu {
+  color: var(--color-blue-bayoux);
+  transition: .25s ease-in-out;
+
+  &:hover {
+    color: #000;
+  }
+}
+.dropdown {
+  padding: 2px 10px;
+}

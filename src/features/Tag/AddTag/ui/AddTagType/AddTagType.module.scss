@@ -1,0 +1,21 @@
+.list {
+  overflow-y: auto;
+}
+
+.required {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background-color: var(--color-athens-gray);
+  margin: 5px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  justify-content: space-between;
+  transition: .25s ease-in-out;
+}
+
+.title {
+  margin: 10px;
+  text-align: center;
+}

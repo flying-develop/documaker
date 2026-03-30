@@ -1,0 +1,41 @@
+.table-col {
+    flex: 1;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18.75px;
+    position: relative;
+
+    &::before {
+        @media all and (max-width: 1000px) {
+            flex-basis: 100%;
+            color: #6C7A89;
+            padding-right: 10px;
+            content: attr(data-label);
+        }
+    }
+}
+
+.table-col-label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.table-col-sort {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(100%, -50%, 0);
+    right: 0;
+    font-size: 0;
+}
+
+.table-col-sorting {
+    cursor: pointer;
+
+    .table-col-label {
+        position: relative;
+    }
+}

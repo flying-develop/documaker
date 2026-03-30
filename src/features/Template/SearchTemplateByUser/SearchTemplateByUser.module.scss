@@ -1,0 +1,10 @@
+.container {
+  cursor: pointer;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 8px;
+  transition: .25s ease;
+  &:hover {
+   background: var(--color-light-green);
+  }
+}

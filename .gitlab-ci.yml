@@ -1,0 +1,27 @@
+variables:
+    HOST: '91.201.54.49'
+    PORT: '22'
+    USER: 'moovert'
+    DOC_ROOT: '/home/moovert/documaker.rgtest.ru/www'
+
+stages:
+    - deploy
+
+before_script:
+    - apt-get update -qq && apt-get install
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - mkdir -p ~/.ssh
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+deploy_job:
+    stage: deploy
+    only:
+        - main
+    script:
+        - ssh $USER@$HOST -p $PORT "cd $DOC_ROOT && git fetch && git checkout $CI_COMMIT_REF_NAME"
+        - ssh $USER@$HOST -p $PORT "cd $DOC_ROOT && git reset --hard HEAD"
+        - ssh $USER@$HOST -p $PORT "cd $DOC_ROOT && git pull origin $CI_COMMIT_REF_NAME"
+        - ssh $USER@$HOST -p $PORT "cd $DOC_ROOT && node -v && npm install"
+        - ssh $USER@$HOST -p $PORT "cd $DOC_ROOT && npm run build"

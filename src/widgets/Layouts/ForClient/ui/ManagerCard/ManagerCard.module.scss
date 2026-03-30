@@ -1,0 +1,44 @@
+.card {
+    border-radius: 16px;
+    background-color: #F5F7F9;
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: 'Geologica', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18.75px;
+    color: #323B42;
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+}
+
+
+.card-icon-text {
+    width: 48px;
+    height: 48px;
+    font-family: 'Geologica', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    background-color: #475E70;
+    color: #F5F7F9;
+}
+
+.card-icon-image {
+    width: 48px;
+    height: 48px;
+}

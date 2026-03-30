@@ -1,0 +1,8 @@
+.input {
+  flex: 1 0 auto;
+  width: 100%;
+
+  &:after {
+    border: none !important;
+  }
+}

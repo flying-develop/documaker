@@ -1,0 +1,28 @@
+.button {
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-athens-gray);
+  border-radius: 6px;
+  transition: .25s ease;
+  color: var(--color-black);
+
+  &:hover {
+    color: #000;
+  }
+}
+
+
+.editor {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: auto 30px 30px;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  bottom: -53px;
+  width: 300px;
+  background: #fff;
+  border: 1px solid var(--color-grey);
+  z-index: 999;
+  border-radius: 5px;
+}

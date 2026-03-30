@@ -1,0 +1,16 @@
+.input.input {
+    flex: 1 0 auto;
+    width: 100%;
+    font-family: 'Geologica', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 0;
+    border: unset;
+    box-shadow: unset;
+    border-radius: 0;
+
+    &:after {
+        border: none !important;
+    }
+}

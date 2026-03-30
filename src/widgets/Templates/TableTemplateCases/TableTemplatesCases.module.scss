@@ -1,0 +1,55 @@
+.table-row {
+    display: flex;
+    align-items: center;
+}
+
+.table-col {}
+
+.table-col-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.table-col-id {
+    flex: 0 0 35px;
+    width: 35px;
+}
+
+.table-col-title {
+    width: 200px;
+    flex: 0 0 200px;
+}
+
+.table-col-client {
+    width: 200px;
+    flex: 0 0 200px;
+}
+
+.table-col-updated_at {
+    width: 100px;
+    flex: 0 0 100px;
+}
+
+.table-col-created_at {
+    width: 100px;
+    flex: 0 0 100px;
+}
+
+.table-col-status {
+    width: 100px;
+    flex: 0 0 100px;
+}
+
+.table-col-drafts {
+    width: 80px;
+    flex: 0 0 80px;
+}
+
+.table-col-action {
+    flex: 0 0 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

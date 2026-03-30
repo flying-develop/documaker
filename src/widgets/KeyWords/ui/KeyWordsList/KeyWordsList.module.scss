@@ -1,0 +1,39 @@
+@import '&/app/styles/_mixins.scss';
+
+.container {
+  display: grid;
+  grid-template-rows: 30px 240px;
+  gap: 10px;
+}
+
+.withButton {
+  grid-template-rows: 30px 200px 30px;
+}
+
+.list {
+  height: 240px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: .25s ease-in-out;
+  padding-right: 5px;
+  @include scroll-bar(5px);
+}
+
+.short {
+  height: 200px;
+}
+
+.menu {
+  color: var(--color-blue-bayoux);
+  transition: .25s ease-in-out;
+
+  &:hover {
+    color: #000;
+  }
+}
+.dropdown {
+  padding: 2px 10px;
+}

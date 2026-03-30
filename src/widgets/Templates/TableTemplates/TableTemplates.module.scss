@@ -1,0 +1,43 @@
+.container {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.table-row {
+    display: flex;
+    align-items: center;
+}
+
+.table-col {}
+
+.table-col-id {
+    width: 35px;
+    flex: 0 0 35px;
+}
+
+.table-col-title {
+    flex: 1;
+}
+
+.table-col-updated_at {
+    width: 284px;
+    flex: 0 0 284px;
+}
+
+.table-col-created_at {
+    width: 284px;
+    flex: 0 0 284px;
+}
+
+.table-col-status {
+    width: 200px;
+    flex: 0 0 200px;
+}
+
+.table-col-action {
+    width: 24px;
+    flex: 0 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,27 @@
+@import "&/app/styles/mixins";
+.search {
+  border-radius: 12px;
+  border: 2px solid var(--color-catskill-white);
+  padding: 11px 14px;
+  color: var(--color-black);
+  transition: 0.3s border-color;
+
+  @include placeholder {
+    font-family: "Geologica", sans-serif;
+    color: var(--color-blue-bayoux);
+    font-weight: 300;
+    line-height: normal;
+    font-size: 15px;
+  }
+
+  &:focus {
+    border-color: var(--color-peach-schnapps);
+  }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+  }
+}

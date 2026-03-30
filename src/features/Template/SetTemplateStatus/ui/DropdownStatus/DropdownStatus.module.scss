@@ -1,0 +1,44 @@
+.status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Geologica', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 300 !important;
+  line-height: 16px !important;
+  text-align: left !important;
+  color: #475E70 !important;
+  border-radius: 12px !important;
+  padding: 12px 16px !important;
+
+  &:hover {
+    background-color: #F5F7F9 !important;
+  }
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.moderation {
+  background: var(--color-persimmon);
+}
+
+.done, .ready {
+  background: var(--color-green);
+}
+
+.inWork, .inProgress {
+  background: var(--color-blue);
+}
+
+.deleted {
+  background: var(--color-blue-bayoux);
+}
+
+.selected {
+  background-color: #F5F7F9 !important;
+  pointer-events: none;
+}

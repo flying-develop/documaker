@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.chip {
+  background-color: var(--color-athens-gray);
+  border-radius: 10px;
+  padding: 5px 10px;
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  grid-template-columns: auto;
+  transition: .25s ease-in-out;
+  cursor: pointer;
+  border: 1px solid var(--color-mystic);
+
+  &:hover {
+    background-color: var(--color-mystic);
+    * {
+      //color: var(--color-black);
+    }
+  }
+}
+
+.active {
+  background-color: var(--color-blue-bayoux);
+  color: var(--color-white);
+  &:hover {
+    background-color: var(--color-mystic);
+  }
+}
+
+.exhibit {
+  background-color: var(--color-white);
+}
+
+.exhibitActive {
+  background-color: var(--color-blue-bayoux) !important;
+  color: var(--color-white);
+}
+
+.bc {
+  grid-template-columns: auto auto 20px;
+}
+
+.c {
+  grid-template-columns: auto 20px;
+}
+
+.b {
+  grid-template-columns: auto auto;
+}
+
+.title {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  flex: 1 0 auto;
+  font-weight: 500;
+}
+
+
+
+.depth_2 {
+  width: 95%;
+}
+
+.depth_3 {
+  width: 85%;
+}
+
+.depth_4 {
+  width: 80%;
+}
+
+.depth_5 {
+  width: 75%;
+}
+
+.depth_6 {
+  width: 70%;
+}
+
+.depth_7 {
+  width: 65%;
+}
+
+.depth_8 {
+  width: 60%;
+}
+
+.depth_9 {
+  width: 55%;
+}
+
+.depth_10 {
+  width: 50%;
+}
+
+
+.badgeContainer {
+  flex: 1 0 auto;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.badge {
+  background: var(--color-blue-bayoux);
+  color: var(--color-athens-gray);
+  padding: 0 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: fit-content;
+  line-height: 140%;
+
+}
+
+.filled {
+  background: var(--color-light-green);
+  color: var(--color-green);
+}
+
+.activeFilled {
+  background: var(--color-green);
+  color: var(--color-white);
+}
+
+.control {
+  display: flex;
+  align-items: center;
+}

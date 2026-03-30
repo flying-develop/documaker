@@ -1,0 +1,15 @@
+.button {
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-athens-gray);
+  border-radius: 6px;
+  transition: .25s ease;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: #000;
+  }
+}

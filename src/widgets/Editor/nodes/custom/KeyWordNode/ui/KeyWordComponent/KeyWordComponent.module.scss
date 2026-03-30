@@ -1,0 +1,17 @@
+.keyWord {
+  gap: 5px;
+  color: var(--color-green);
+  background: var(--color-light-green);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 6px;
+  user-select: none;
+}
+
+
+
+.container {
+  position: relative;
+  margin: 0 3px;
+}

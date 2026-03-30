@@ -1,0 +1,32 @@
+.user {
+  display: grid;
+  grid-template-columns: 40px 60px 40px 250px auto 40px;
+  background-color: var(--color-athens-gray);
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: var(--color-blue-bayoux);
+  cursor: pointer;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.position {
+  display: flex;
+  align-items: center;
+  color: var(--color-persimmon);
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+}

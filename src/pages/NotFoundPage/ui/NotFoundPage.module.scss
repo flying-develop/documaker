@@ -1,0 +1,26 @@
+.not-found {
+    width: 100%;
+    height: calc(100vh - 128px);
+    background-color: #ffffff;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.not-found-text {
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+
+.not-found-button {
+    font-family: 'Geologica', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+    padding: 16px 24px;
+    height: 48px;
+    border-radius: 12px;
+}

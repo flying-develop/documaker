@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    grid-template-columns: 272px 1fr;
+    gap: 24px;
+    padding: 24px;
+    overflow-x: auto;
+}
+
+.base-nav {
+    border-radius: 24px;
+    border: 1px solid #D5E0E7;
+    background: #FFF;
+    overflow: hidden;
+}
+
+.base-nav-menu {
+    margin: -24px;
+    padding: 24px;
+    background: #F5F7F9;
+}
+
+.base-nav-content {
+    margin-left: 24px;
+}

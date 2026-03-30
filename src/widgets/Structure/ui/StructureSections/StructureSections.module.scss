@@ -1,0 +1,11 @@
+@import '&/app/styles/_mixins.scss';
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  padding: 0 5px 10px 0;
+  max-height: calc(100vh - 270px);
+  @include scroll-bar(5px)
+}

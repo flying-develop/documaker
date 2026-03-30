@@ -1,0 +1,46 @@
+@import '&/app/styles/_mixins.scss';
+
+.title {
+  margin: 10px;
+  text-align: center;
+}
+
+.option {
+  display: grid;
+  grid-template-columns: auto 30px;
+  gap: 10px;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--color-athens-gray);
+}
+
+.choice {
+  grid-template-columns: auto 30px 30px;
+
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 15px;
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  @include scroll-bar(5px)
+
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}

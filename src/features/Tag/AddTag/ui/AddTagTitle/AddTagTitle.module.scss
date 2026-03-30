@@ -1,0 +1,19 @@
+.name {
+  font-weight: bold;
+  color: var(--color-persimmon);
+  background-color: var(--color-pippin);
+  border-radius: 12px;
+  padding: 5px 10px;
+  user-select: none;
+  height: 26px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 5px;
+}

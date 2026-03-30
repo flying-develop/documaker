@@ -1,0 +1,46 @@
+.editor {
+    background-color: transparent;
+    border: unset;
+    border-radius: unset;
+}
+
+.editor-body.editor-body {
+    padding: 0;
+}
+
+.editor-header {
+    background-color: #E6EDF3;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    border-radius: 0 0 8px 8px;
+}
+
+.editor-header-body {
+    background: #FFFFFF;
+    padding: 24px 32px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: padding 0.1s, gap 0.1s;
+
+    :global {
+        .Collapsible__trigger {
+            display: none;
+        }
+    }
+
+    .editor-header-fixed & {
+        padding: 20px 32px;
+        gap: 0;
+    }
+}
+
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px;
+}

@@ -1,0 +1,13 @@
+@import '&/app/styles/_mixins.scss';
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.list {
+  overflow-y: auto;
+  max-height: 500px;
+  @include scroll-bar(5px);
+}

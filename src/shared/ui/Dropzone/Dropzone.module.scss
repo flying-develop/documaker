@@ -1,0 +1,89 @@
+.Dropzone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--color-grey);
+  height: 100px;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 6px;
+  background: var(--color-athens-gray);
+  color: var(--color-blue-bayoux);
+  transition: 0.25s ease-in-out;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+
+  &:hover {
+    color: var(--color-persimmon);
+    border: 1px dashed var(--color-persimmon);
+    * {
+      color: var(--color-persimmon);
+      stroke: var(--color-persimmon);
+    }
+  }
+
+  * {
+    transition: 0.25s ease-in-out;
+    stroke: var(--color-blue-bayoux);
+  }
+
+  svg {
+    transition: 0.1s ease-in-out!important;
+  }
+}
+
+.error {
+  * {
+    color: var(--color-sunset-orange);
+    stroke: var(--color-sunset-orange);
+  }
+
+  border: 1px dashed var(--error);
+}
+
+.focus {
+  * {
+    color: var(--color-green);
+    stroke: var(--color-green);
+  }
+
+  border: 1px dashed var(--color-green);
+}
+
+.file {
+  position: relative;
+  background: var(--color-pippin-2);
+  color: var(--color-sunset-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--color-sunset-orange);
+  height: 100px;
+  flex-direction: column;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.25s ease-in-out;
+  margin: 0;
+  font-size: 16px;
+}
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: var(--color-sunset-orange);
+  border: 1px solid var(--color-sunset-orange);
+  width: 24px!important;
+  height: 24px!important;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 500;
+}

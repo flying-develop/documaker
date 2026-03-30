@@ -1,0 +1,110 @@
+.modal-title {
+    font-family: 'Geologica', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+
+}
+
+.modal-content {
+    padding: 28px 24px 24px 24px !important;
+    box-shadow: unset !important;
+}
+
+.modal {
+    :global {
+        .ant-modal-header {
+            margin-bottom: 20px !important;
+        }
+    }
+}
+
+.search {
+    width: 100%;
+}
+
+.content {
+    margin-top: 8px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #F5F7F9;
+    border-radius: 12px;
+    gap: 16px;
+
+    & + & {
+        margin-top: 8px;
+    }
+}
+
+.list-item-col {
+    flex: 1
+}
+
+.list-item-user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.list-item-user-avatar-text,
+.list-item-user-avatar-image {
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.list-item-email {
+    flex: 0 0 305px;
+}
+
+.list-item-choice {
+    flex: 0 0 24px;
+    height: 24px;
+}
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+
+    :global {
+        .ant-checkbox-inner {
+            width: 24px;
+            height: 24px;
+            border: unset;
+            border-radius: 50%;
+
+            &:after {
+                background-image: url('/images/icon-checkbox.svg');
+                width: 20px;
+                height: 20px;
+                border: unset;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+.button {
+    border-radius: 12px;
+    height: 48px;
+    font-family: 'Geologica', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 16px;
+    box-shadow: unset;
+    min-width: 86px;
+}

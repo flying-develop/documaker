@@ -1,0 +1,45 @@
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.button {
+    height: auto;
+    padding: 7px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--color-blue-bayoux);
+    background: var(--color-athens-gray);
+    border-radius: 0;
+    box-shadow: unset;
+
+    &:hover {
+        background-color: var(--color-mystic) !important;
+    }
+}
+
+.active {
+    background-color: var(--color-mystic);
+    color: #000;
+}
+
+.first {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding-left: 7px;
+}
+
+.last {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding-right: 7px;
+}
+
+.group {
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
